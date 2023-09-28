@@ -13,6 +13,9 @@ Resources:
     Properties:
       CodeUri: lambda_functions/auth/
       Handler: lambda_function.lambda_handler
+      Environment:
+        Variables:
+          SECRET_KEY: ""
       Events:
         Auth:
           Type: Api
